@@ -46,7 +46,32 @@ $(function(){
     $("#output4").text(result);
   });
 });
+$(function(){
+  $('#quarts2liters').submit(function(event){
+    event.preventDefault();
+    var q = parseInt($("#quarts2liters1").val());
+    var result = ((q/1.05669));
+    $("#output5").text(result);
+  });
+});
 
+$(function(){
+  $('#quarts2qallons').submit(function(event){
+    event.preventDefault();
+    var q = parseInt($("#quarts2qallons1").val());
+    var result = ((q/.25));
+    $("#output6").text(result);
+  });
+});
+
+$(function(){
+  $('#quarts2pints').submit(function(event){
+    event.preventDefault();
+    var q = parseInt($("#quarts2pints1").val());
+    var result = ((q*2));
+    $("#output7").text(result);
+  });
+});
 //   $('#math').click(function(){
 //
 //     var add = function (number1, number2) {  return number1 + number2;};
