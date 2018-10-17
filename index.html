@@ -3,12 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
 
-    <h1>Calculator</h1>
+    <div class="container">
+      <h1>Calculator</h1>
+    <form id="add">
+        <div class="form-group">
+          <label for="add1">1st number:</label>
+          <input id="add1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="add2">2nd number:</label>
+          <input id="add2" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Add!</button>
+      </form>
+      <div id="output">
+
+      </div>
     <p id="math">Math</p>
     <p id="bmi">BMI Calculator</p>
     <p id="tempf2c">Temperature: Fahrenheit to Celcius</p>
@@ -18,5 +35,6 @@
       <li id="quarts2liters">Quarts to Liters</li>
       <li id="liters2quarts">Liters to Quarts</li>
     </ul>
+  </div>
   </body>
 </html>
