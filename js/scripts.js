@@ -10,6 +10,7 @@ var sub = function (number1, number2) {
 var divide = function (number1, number2) {
   return number1 / number2
 };
+
 $(function(){
   $("form#add").submit(function(event) {
     event.preventDefault();
@@ -71,6 +72,19 @@ $(function(){
     var result = ((q*2));
     $("#output7").text(result);
   });
+});
+$(function(){
+  $('#appointment').submit(function(event){
+    event.preventDefault();
+    var name1 = ("#name1")
+    var DoA1 =  ("#DoA1")
+    var date1 = ("#date1")
+    var time1 = ("#time1")
+    $("#appointment-modal").toggle();
+  });
+});
+$(function(){
+
 });
 //   $('#math').click(function(){
 //
