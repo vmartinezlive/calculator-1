@@ -76,11 +76,16 @@ $(function(){
 $(function(){
   $('#appointment').submit(function(event){
     event.preventDefault();
-    var name1 = ("#name1")
-    var DoA1 =  ("#DoA1")
-    var date1 = ("#date1")
-    var time1 = ("#time1")
+    var name = $("#name1").val();
+    var DoA =  $("#DoA1").val();
+    var date = $("#date1").val();
+    var time = $("#time1").val();
+    $("#name").text(name);
+    $("#date").text(date);
+    $("#time").text(time);
+    $("#DoA").text(DoA);
     $("#appointment-modal").toggle();
+    // $(".modal-body").text();
   });
 });
 $(function(){
